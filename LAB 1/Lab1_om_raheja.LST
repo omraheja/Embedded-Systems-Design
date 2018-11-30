@@ -1,0 +1,38 @@
+DUNFIELD 8051 ASSEMBLER: LB1                                          PAGE: 1
+
+0000                         1  	ORG 0H  
+0000  C3                     2  	CLR C
+0001  75 21 00               3  	MOV 21H,#00H
+0004  75 22 00               4  	MOV 22H,#00H
+0007  75 23 00               5  	MOV 23H,#00H
+000A  75 30 00               6  	MOV 30H,#00H
+000D  7F 00                  7  	MOV R7,#00H
+000F  FA                     8  	MOV R2,A   
+0010  E5 F0                  9  	MOV A,B    
+0012  60 2E                 10  	JZ ERROR   
+0014  33                    11  	RLC A      
+0015  40 22                 12  	JC LOOP3
+0017  33                    13  	RLC A      
+0018  40 18                 14  	JC LOOP2  
+001A  F5 F0                 15  	MOV B,A    
+001C  EA                    16  	MOV A,R2   
+001D  78 00                 17  	MOV R0,#0H 
+001F  95 F0                 18  MAIN:	SUBB A,B    
+0021  40 04                 19       	JC LOOP      
+0023  08                    20       	INC R0      
+0024  FF                    21       	MOV R7,A    
+0025  80 F8                 22       	SJMP MAIN    
+0027  88 21                 23  LOOP: 	MOV 21H,R0   
+0029  8F 22                 24        	MOV 22H,R7   
+002B  88 23                 25        	MOV 23H,R0   
+002D  75 30 00              26        	MOV 30H,#00H 
+0030  80 0E                 27        	SJMP END
+0032  F5 23                 28  LOOP2:	MOV 23H,A
+0034  75 30 02              29        	MOV 30H,#02H
+0037  80 07                 30        	SJMP END
+0039  C3                    31  LOOP3: 	CLR C
+003A  33                    32         	RLC A
+003B  F5 23                 33         	MOV 23H,A
+003D  75 30 02              34         	MOV 30H,#02H
+0040  80 FE                 35  END:    SJMP END   
+0042  75 30 01              36  ERROR: 	MOV 30H,#0001H  
