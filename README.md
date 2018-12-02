@@ -1,7 +1,7 @@
 # Embedded-Systems-Design
 
 ## INTRODUCTION:
-This repository contains all the projects which I worked on in the Embedded Systems Design (ECEN 5613) Course.
+    This repository contains all the projects which I worked on in the Embedded Systems Design (ECEN 5613) Course.
 
 ## PROJECT FOLDER:
 ### LAB 1
