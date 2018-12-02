@@ -1,0 +1,28 @@
+DUNFIELD 8051 ASSEMBLER: LAB2SUP                                      PAGE: 1
+
+0000                         1        ORG 0000H 
+0000  02 00 50               2        LJMP MAIN
+0050                         3        ORG 0050H
+0050  75 A8 82               4  MAIN: MOV IE,#82H        
+0053  75 89 01               5        MOV TMOD,#01H
+0056  75 8C 00               6        MOV TH0,#0000H       
+0059  75 8A 00               7        MOV TL0,#0000H
+005C  90 70 00               8        MOV DPTR,#7000H      
+005F  75 80 00               9        MOV P0,#00H
+0062  A9 80                 10        MOV R1,P0
+0064  7A 80                 11        MOV R2,#80H
+0066  75 88 10              12        MOV TCON,#0010H
+0069                        13  
+0069  E9                    14  HERE: MOV A,R1
+006A  F0                    15        MOVX @DPTR,A
+006B  09                    16        INC R1
+006C  B9 7F FA              17        CJNE R1,#07FH,HERE
+006F  79 00                 18        MOV R1,#00H
+0071  80 F6                 19        SJMP HERE
+000B                        20        ORG 000BH
+000B  B2 97                 21        CPL P1.7
+000D  EA                    22  OKR:  MOV A,R2
+000E  F0                    23        MOVX @DPTR,A
+000F  0A                    24        INC R2
+0010  BA FF 00              25        CJNE R2,#0FFH,EXIT
+0013  32                    26  EXIT: RETI
