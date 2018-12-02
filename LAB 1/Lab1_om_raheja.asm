@@ -2,9 +2,15 @@
  * Course      : ECEN 5613 (Embedded Systems Design)
  * Semester    : FALL 2018
  * Description : An assembly language code which meets the following requirements:
+<<<<<<< HEAD
  		 This program shall calculate the following equation using integer division: Z = (X/(Y*4))
 		 where, X, Y, and Z are unsigned 8-bit values.
 		 Example: If X=0x2A and Y=0x02, then Z=0x05. (2*4 = 8 and 42 div 8 = 5)
+=======
+ 		  This program shall calculate the following equation using integer division: Z = (X/(Y*4))
+		  where, X, Y, and Z are unsigned 8-bit values.
+		  Example: If X=0x2A and Y=0x02, then Z=0x05. (2*4 = 8 and 42 div 8 = 5)
+>>>>>>> 403ace840b36055057a5763b0a7e2c0a832b4724
  **/
 
 /*--------------------------------------------------------------------------------------------------------------------*/

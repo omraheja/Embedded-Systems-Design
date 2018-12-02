@@ -3,7 +3,7 @@ DESCRIPTION:
 An assembly language program which shall calculate the following equation using integer division: Z = (X/(Y*4))
 where, X, Y, and Z are unsigned 8-bit values.
 
-Example: If X=0x2A and Y=0x02, then Z=0x05. (2*4 = 8 and 42 div 8 = 5)/
+Example: If X=0x2A and Y=0x02, then Z=0x05. (2*4 = 8 and 42 div 8 = 5).
 
 Preconditions:
 -> Accumulator contains the dividend X. 
