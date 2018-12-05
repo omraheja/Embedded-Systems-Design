@@ -397,7 +397,7 @@ void main()
 
                     printf_tiny("\n\rBUFFER 0\n\r");
                     printf_tiny("\n\rStart Address>>>>>>>>>>>>>>>>>>0x%x\n\r",Buffer_0temp);
-                    printf_tiny("\n\r\Ending Address>>>>>>>>>>>>>>>>0x%x\n\r",(Buffer_0temp)+(number));
+                    printf_tiny("\n\rEnding Address>>>>>>>>>>>>>>>>0x%x\n\r",(Buffer_0temp)+(number));
                     printf_tiny("\n\rBuffer Size>>>>>>>>>>>>>>>>>>>>%d\n\r",number);
                     printf_tiny("\n\rStorage characters in buffer>>>%d\n\r",storage_char);
                     printf_tiny("\n\rFree Spaces in buffer>>>>>>>>>>%d\n\r",(number-storage_char));
@@ -428,7 +428,7 @@ void main()
                         }
                     }
                     printf_tiny("\n\r*********************************************************\n\r");
-                    printf_tiny("\n\r\Number of storage characters = %d\n\r",storage_char);
+                    printf_tiny("\n\rNumber of storage characters = %d\n\r",storage_char);
                     printf_tiny("\n\rTotal number of characters received = %d\n\r",total_char);
                     printf_tiny("\n\rTotal number of buffers that were allocated since the start of the program = %d\n\r",(i+2));
                     printf_tiny("\n\rContents in Buffer 0\n\r");
