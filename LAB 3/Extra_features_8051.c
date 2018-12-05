@@ -143,12 +143,12 @@ void main(void)
 
         if(number==1)
         {
-            printf_tiny("\n\r\PWM ON\n\r");
+            printf_tiny("\n\rPWM ON\n\r");
             CR=1;                	      	 //PWM on
         }
         else if(number==2)
         {
-            printf_tiny("\n\r\PWM OFF\n\r");
+            printf_tiny("\n\rPWM OFF\n\r");
             CR=0;                		 //PWM off
         }
         else if(number ==3)
