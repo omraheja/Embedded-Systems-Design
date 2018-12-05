@@ -246,32 +246,22 @@ int user_input_del()
 
 void main()
 {
-    char input_char;                                       //For + - = ? @ functionality
-    unsigned int number;                                   //For storing buffer size for buffer 0 and buffer 1
-    unsigned int number2;                                  //For storing buffer size for additional buffers
-    unsigned int num_del;                                  //stores a particulat buffer you want to delete
-    unsigned int total_char;                               //Total number of char received
-    unsigned int storage_char;                             //Total number of storage char received
-    unsigned int buff_0_count;                             //to display the contents present in buffer 0 at any moment
-    unsigned int total_buff_count;                         //Total buffer count
-    unsigned int buff_size[50];                            //array for storing size of each buffer
-    uint16_t Buffer_0temp;                                 //stores address of buffer 0
-    uint16_t Buffer_1temp;                                 //stores address of buffer 1
-    int count;                                             //index for buffer_0 so that data can be saved at locations ahead of base address
-    int i;                                                 //to keep count of thr total number of buffers
-    int t;                                                 //number of new buffer example: t=2 refers to buffer 2
-    int m;                                                 //counter variable
+    char input_char;                                         //For + - = ? @ functionality
+    unsigned int number=0;                                   //For storing buffer size for buffer 0 and buffer 1
+    unsigned int number2=0;                                  //For storing buffer size for additional buffers
+    unsigned int num_del;                                    //stores a particulat buffer you want to delete
+    unsigned int total_char=0;                               //Total number of char received
+    unsigned int storage_char=0;                             //Total number of storage char received
+    unsigned int buff_0_count;                               //to display the contents present in buffer 0 at any moment
+    unsigned int total_buff_count;                           //Total buffer count
+    unsigned int buff_size[50];                              //array for storing size of each buffer
+    uint16_t Buffer_0temp;                                   //stores address of buffer 0
+    uint16_t Buffer_1temp;                                   //stores address of buffer 1
+    int count=0;                                             //index for buffer_0 so that data can be saved at locations ahead of base address
+    int i=0;                                                 //to keep count of thr total number of buffers
+    int t=2;                                                 //number of new buffer example: t=2 refers to buffer 2
+    int m=0;                                                 //counter variable
 
-    /*Variable Initialization*/
-    total_char=0;
-    storage_char=0;
-    number=0;
-    number2=0;
-    count = 0;
-    i=0;
-    t=2;
-    m=0;
-    
     init_dynamic_memory((MEMHEADER xdata *)heap, HEAP_SIZE);
     DEBUGPORT(4);
 
