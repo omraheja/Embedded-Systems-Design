@@ -1,7 +1,13 @@
 /*Author Name : Om Raheja
-  Date        : 20th October 2018
+  Date        : 26th October 2018
   Course      : ECEN 5613 Embedded System Design
-  Project     : UART DYNAMIC MEMORY MANAGEMENT
+  Description : Demonstrate other features of the Atmel AT89C51RC2 as described below :-
+                 Run PWM (turn on PWM output)
+		 Stop PWM (turn off PWM output)
+		 Set FCLK PERIPH at the minimum frequency supported by the CKRL register
+		 Set FCLK PERIPH at the maximum frequency supported by the CKRL register
+		 Enter Idle mode (set IDLE bit in PCON register)
+		 Enter Power Down mode (set PDE bit in PCON register)
 */
 
 /* ************************************************************************************************************************* */
