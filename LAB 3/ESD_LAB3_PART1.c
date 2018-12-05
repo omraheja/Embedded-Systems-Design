@@ -254,23 +254,24 @@ void main()
     unsigned int storage_char;                             //Total number of storage char received
     unsigned int buff_0_count;                             //to display the contents present in buffer 0 at any moment
     unsigned int total_buff_count;                         //Total buffer count
-	unsigned int buff_size[50];                            //array for storing size of each buffer
-	uint16_t Buffer_0temp;                                 //stores address of buffer 0
-	uint16_t Buffer_1temp;                                 //stores address of buffer 1
-	int count;                                             //index for buffer_0 so that data can be saved at locations ahead of base address
-	int i;                                                 //to keep count of thr total number of buffers
+    unsigned int buff_size[50];                            //array for storing size of each buffer
+    uint16_t Buffer_0temp;                                 //stores address of buffer 0
+    uint16_t Buffer_1temp;                                 //stores address of buffer 1
+    int count;                                             //index for buffer_0 so that data can be saved at locations ahead of base address
+    int i;                                                 //to keep count of thr total number of buffers
     int t;                                                 //number of new buffer example: t=2 refers to buffer 2
-	int m;                                                 //counter variable
+    int m;                                                 //counter variable
 
-	/*Variable Initialization*/
-	total_char=0;
-	storage_char=0;
+    /*Variable Initialization*/
+    total_char=0;
+    storage_char=0;
     number=0;
-	number2=0;
-	count = 0;
-	i=0;
-	t=2;
-	m=0;
+    number2=0;
+    count = 0;
+    i=0;
+    t=2;
+    m=0;
+    
     init_dynamic_memory((MEMHEADER xdata *)heap, HEAP_SIZE);
     DEBUGPORT(4);
 
