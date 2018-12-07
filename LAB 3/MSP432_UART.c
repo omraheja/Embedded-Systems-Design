@@ -1,7 +1,7 @@
 /* Author Name : Om Raheja
  * Date        : 20th October 2018
  * Course      : ECEN 5613 Embedded System Design
- * Project     : Interrupt driven UART communication for TI-MSP432(ARM CORTEX M4F)
+ * Project     : Interrupt driven UART for TI-MSP432(ARM CORTEX M4F)
  *
  *--COPYRIGHT--,BSD_EX
  *Copyright (c) 2014, Texas Instruments Incorporated
