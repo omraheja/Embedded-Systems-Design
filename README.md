@@ -20,3 +20,4 @@
 ### LAB 3
     -> Uart_dynamic_memory_management.c
     -> Extra_features_8051.c
+    -> MSP432_UART.c
